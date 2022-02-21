@@ -7,4 +7,5 @@
  */
 exports.sessionRedis = {
   name: '', // if name present, use `app.redis[name]` for session store
+  namespace: 'egg-sess',
 };
