@@ -6,7 +6,7 @@ const ONE_DAY = 1000 * 60 * 60 * 24;
 
 module.exports = app => {
   const name = app.config.sessionRedis.name;
-  const namespace = app.config.namespace;
+  const namespace = app.config.sessionRedis.namespace;
   const redis = name ? app.redis.get(name) : app.redis;
   assert(redis, `redis instance [${name}] not exists`);
 
